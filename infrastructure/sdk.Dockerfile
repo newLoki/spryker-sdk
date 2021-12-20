@@ -18,6 +18,7 @@ FROM application-production-dependencies AS application-production-codebase
 
 COPY --chown=spryker:spryker src ${srcRoot}/src
 COPY --chown=spryker:spryker app ${srcRoot}/app
+COPY --chown=spryker:spryker db ${srcRoot}/db
 COPY --chown=spryker:spryker extension ${srcRoot}/extension
 COPY --chown=spryker:spryker translations ${srcRoot}/translations
 COPY --chown=spryker:spryker config ${srcRoot}/config
