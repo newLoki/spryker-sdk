@@ -27,6 +27,6 @@ COPY --chown=spryker:spryker .env.dist ${srcRoot}/.env
 RUN --mount=type=cache,id=composer,sharing=locked,target=/home/spryker/.composer/cache,uid=1000 \
   composer dump-autoload -o
 ENV APP_ENV=prod
-RUN bin/console cache:warmup
+RUN bin/console sdkd:init:sdk && bin/console cache:warmup
 
 ENTRYPOINT ["/bin/bash", "-c", "/data/bin/console $@", "--"]
