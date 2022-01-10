@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "df1bf43e2bd56d1f02d7bd8820dd7b06",
+    "content-hash": "c29bc8e4e84d66c8ebacd07a841a5be3",
     "packages": [
         {
             "name": "clue/stream-filter",
@@ -4447,16 +4447,16 @@
         },
         {
             "name": "spryker-sdk/evaluator",
-            "version": "dev-master",
+            "version": "dev-bugfix/pplus-790-autoload-project-files",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spryker-sdk/evaluator.git",
-                "reference": "19cc1a4882df6e687bfefee74e7aa92e70418fb9"
+                "reference": "b538a0d14ca42fd4f24e211cbb1f020c6cc3839e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spryker-sdk/evaluator/zipball/19cc1a4882df6e687bfefee74e7aa92e70418fb9",
-                "reference": "19cc1a4882df6e687bfefee74e7aa92e70418fb9",
+                "url": "https://api.github.com/repos/spryker-sdk/evaluator/zipball/b538a0d14ca42fd4f24e211cbb1f020c6cc3839e",
+                "reference": "b538a0d14ca42fd4f24e211cbb1f020c6cc3839e",
                 "shasum": ""
             },
             "require": {
@@ -4484,7 +4484,6 @@
             "require-dev": {
                 "phpunit/phpunit": "^9.5"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -4503,9 +4502,9 @@
             "description": "Code evaluator and upgrader tool",
             "support": {
                 "issues": "https://github.com/spryker-sdk/evaluator/issues",
-                "source": "https://github.com/spryker-sdk/evaluator/tree/master"
+                "source": "https://github.com/spryker-sdk/evaluator/tree/bugfix/pplus-790-autoload-project-files"
             },
-            "time": "2021-12-31T09:01:13+00:00"
+            "time": "2022-01-10T12:17:04+00:00"
         },
         {
             "name": "spryker-sdk/sdk-contracts",
@@ -13744,14 +13743,7 @@
             "time": "2021-03-09T10:59:23+00:00"
         }
     ],
-    "aliases": [
-        {
-            "package": "spryker-sdk/evaluator",
-            "version": "9999999-dev",
-            "alias": "0.1.0",
-            "alias_normalized": "0.1.0.0"
-        }
-    ],
+    "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
         "spryker-sdk/evaluator": 20,
