@@ -85,13 +85,25 @@ class AcceptanceTester extends Actor
     }
 
     /**
+     * @param string $dirname
+     *
+     * @return void
+     */
+    public function cleanDirIfExists(string $dirname): void
+    {
+        if ($dirname && is_dir($dirname)) {
+            $this->cleanDir($dirname);
+        }
+    }
+
+    /**
      * @param string $project
      *
      * @return void
      */
     public function cleanReports(string $project = 'project'): void
     {
-        $this->cleanDir($this->getPathFromProjectRoot('reports', $project));
+        $this->cleanDirIfExists($this->getPathFromProjectRoot('reports', $project));
     }
 
     /**
