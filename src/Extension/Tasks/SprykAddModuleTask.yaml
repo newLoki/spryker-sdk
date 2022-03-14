@@ -3,7 +3,7 @@ id: "generate:php:add-module"
 short_description: "Generate a new Spryker module in the current project"
 help: ~
 stage: build
-command: "APPLICATION_ENV=development CORE_NAMESPACES=%coreNamespaces% PROJECT_NAMESPACES=%projectNamespaces% PROJECT_NAMESPACE=%projectNamespace% php %sdk_dir%/vendor/bin/spryk-run AddModule --mode=%coreLevel% --organization=%namespace% --module=%module%"
+command: "APPLICATION_SDK_DIR=%sdk_dir% APPLICATION_ROOT_DIR=%project_dir% APPLICATION_ENV=development CORE_NAMESPACES=%coreNamespaces% PROJECT_NAMESPACES=%projectNamespaces% PROJECT_NAMESPACE=%projectNamespace% php %sdk_dir%/vendor/bin/spryk-run AddModule --mode=%coreLevel% --organization=%namespace% --module=%module%"
 version: 1.0.0
 type: local_cli
 placeholders:
@@ -22,7 +22,7 @@ placeholders:
       name: "projectNamespaces"
       description: "Project namespaces"
       type: string
-      settingPaths: ["projectNamespaces"]
+      settingPaths: [ "projectNamespaces" ]
   - name: "%projectNamespace%"
     value_resolver: STATIC
     optional: true
@@ -30,7 +30,15 @@ placeholders:
       name: "projectNamespace"
       description: "Project namespace"
       type: string
-      settingPaths: ["projectNamespace"]
+      settingPaths: [ "projectNamespace" ]
+  - name: "%project_dir%"
+    value_resolver: STATIC
+    optional: true
+    configuration:
+      name: "project_dir"
+      description: "Project dir"
+      type: string
+      settingPaths: [ "project_dir" ]
   - name: "%sdk_dir%"
     value_resolver: SDK_DIR
     optional: true
