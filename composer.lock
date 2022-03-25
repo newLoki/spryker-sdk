@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9b007869afde33428ca4639a8823ebf0",
+    "content-hash": "666f716863684abd58169874c699cc94",
     "packages": [
         {
             "name": "clue/stream-filter",
@@ -4569,16 +4569,10 @@
         {
             "name": "spryker-sdk/upgrader",
             "version": "dev-develop-paas",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/spryker-sdk/upgrader.git",
-                "reference": "1b59727861298d16bf117b1b49638c10dbdf2357"
-            },
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/spryker-sdk/upgrader/zipball/1b59727861298d16bf117b1b49638c10dbdf2357",
-                "reference": "1b59727861298d16bf117b1b49638c10dbdf2357",
-                "shasum": ""
+                "type": "path",
+                "url": "/upgrader",
+                "reference": "1b59727861298d16bf117b1b49638c10dbdf2357"
             },
             "require": {
                 "davidrjonas/composer-lock-diff": "^1.6",
@@ -4609,23 +4603,44 @@
             "autoload": {
                 "psr-4": {
                     "Core\\": "src/Core/",
-                    "Upgrade\\": "src/Upgrade/",
                     "Codebase\\": "src/Codebase/",
+                    "CodeCompliance\\": "src/CodeCompliance/",
                     "Evaluate\\": "src/Evaluate/",
-                    "Upgrader\\": "src/Upgrader/",
-                    "CodeCompliance\\": "src/CodeCompliance/"
+                    "Upgrade\\": "src/Upgrade/",
+                    "Upgrader\\": "src/Upgrader/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "CodeComplianceTest\\": "tests/CodeComplianceTest/",
+                    "CodebaseTest\\": "tests/CodebaseTest/",
+                    "CoreTest\\": "tests/Core/",
+                    "TestProject\\": "tests/data/Evaluate/Project/",
+                    "TestCore\\": "tests/data/Evaluate/Core/",
+                    "UpgradeData\\": "tests/data/Upgrade/"
+                }
+            },
+            "scripts": {
+                "cs-check": [
+                    "phpcs --colors -p -s --extensions=php --standard=vendor/spryker/code-sniffer/Spryker/ruleset.xml --ignore=/tests/_data/ tests/ src/"
+                ],
+                "cs-fix": [
+                    "phpcbf --colors -p --extensions=php --standard=vendor/spryker/code-sniffer/Spryker/ruleset.xml --ignore=/tests/_data/ tests/ src/"
+                ],
+                "stan": [
+                    "phpstan analyze -l 8 src/"
+                ],
+                "tests": [
+                    "phpunit tests/"
+                ]
+            },
             "license": [
                 "proprietary"
             ],
             "description": "Code evaluator and upgrader tool",
-            "support": {
-                "issues": "https://github.com/spryker-sdk/upgrader/issues",
-                "source": "https://github.com/spryker-sdk/upgrader/tree/develop-paas"
-            },
-            "time": "2022-03-21T11:08:04+00:00"
+            "transport-options": {
+                "relative": false
+            }
         },
         {
             "name": "spryker/acl-entity-extension",
@@ -13746,8 +13761,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "spryker-sdk/sdk-contracts": 20,
-        "spryker-sdk/upgrader": 20
+        "spryker-sdk/sdk-contracts": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
