@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9b007869afde33428ca4639a8823ebf0",
+    "content-hash": "b909bce0232b2d0acae9a8deb1880d07",
     "packages": [
         {
             "name": "clue/stream-filter",
@@ -4568,16 +4568,16 @@
         },
         {
             "name": "spryker-sdk/upgrader",
-            "version": "dev-develop-paas",
+            "version": "dev-bugfix/pplus-1176/message-contains-project-prefix-twice",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spryker-sdk/upgrader.git",
-                "reference": "1b59727861298d16bf117b1b49638c10dbdf2357"
+                "reference": "2ab3a6d15237d29926380708eac4f2eaf568a782"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spryker-sdk/upgrader/zipball/1b59727861298d16bf117b1b49638c10dbdf2357",
-                "reference": "1b59727861298d16bf117b1b49638c10dbdf2357",
+                "url": "https://api.github.com/repos/spryker-sdk/upgrader/zipball/2ab3a6d15237d29926380708eac4f2eaf568a782",
+                "reference": "2ab3a6d15237d29926380708eac4f2eaf568a782",
                 "shasum": ""
             },
             "require": {
@@ -4623,9 +4623,9 @@
             "description": "Code evaluator and upgrader tool",
             "support": {
                 "issues": "https://github.com/spryker-sdk/upgrader/issues",
-                "source": "https://github.com/spryker-sdk/upgrader/tree/develop-paas"
+                "source": "https://github.com/spryker-sdk/upgrader/tree/bugfix/pplus-1176/message-contains-project-prefix-twice"
             },
-            "time": "2022-03-21T11:08:04+00:00"
+            "time": "2022-04-18T13:26:51+00:00"
         },
         {
             "name": "spryker/acl-entity-extension",
