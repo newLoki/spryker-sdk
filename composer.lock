@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0771ba0ca82e29523ca053cbe7f130f1",
+    "content-hash": "d9eebc8e7e5b09f40fda60f3b6728866",
     "packages": [
         {
             "name": "clue/stream-filter",
@@ -5425,16 +5425,16 @@
         },
         {
             "name": "spryker-sdk/upgrader",
-            "version": "dev-feature/pplust-510/global-integrator",
+            "version": "dev-feature/pplust-510/master-intergrator-as-part-of-upgrader",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spryker-sdk/upgrader.git",
-                "reference": "df9d87135e9c3b2dc79c470cc13383289eaa02f1"
+                "reference": "9b88f03fea11fad96db5bad77efb72739f9578aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spryker-sdk/upgrader/zipball/df9d87135e9c3b2dc79c470cc13383289eaa02f1",
-                "reference": "df9d87135e9c3b2dc79c470cc13383289eaa02f1",
+                "url": "https://api.github.com/repos/spryker-sdk/upgrader/zipball/9b88f03fea11fad96db5bad77efb72739f9578aa",
+                "reference": "9b88f03fea11fad96db5bad77efb72739f9578aa",
                 "shasum": ""
             },
             "require": {
@@ -5481,9 +5481,9 @@
             "description": "Code evaluator and upgrader tool",
             "support": {
                 "issues": "https://github.com/spryker-sdk/upgrader/issues",
-                "source": "https://github.com/spryker-sdk/upgrader/tree/feature/pplust-510/global-integrator"
+                "source": "https://github.com/spryker-sdk/upgrader/tree/feature/pplust-510/master-intergrator-as-part-of-upgrader"
             },
-            "time": "2022-04-27T16:21:29+00:00"
+            "time": "2022-04-28T12:14:39+00:00"
         },
         {
             "name": "spryker/acl-entity-extension",
@@ -15480,5 +15480,5 @@
         "composer-runtime-api": "^2.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.1.0"
 }
