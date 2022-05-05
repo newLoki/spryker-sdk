@@ -5429,12 +5429,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/spryker-sdk/upgrader.git",
-                "reference": "73abe9eb2f7bb77f5afeffe7b191190e92427765"
+                "reference": "7a45f41f93cdca3d03aa2e12e105f8f338c9ccc3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spryker-sdk/upgrader/zipball/73abe9eb2f7bb77f5afeffe7b191190e92427765",
-                "reference": "73abe9eb2f7bb77f5afeffe7b191190e92427765",
+                "url": "https://api.github.com/repos/spryker-sdk/upgrader/zipball/7a45f41f93cdca3d03aa2e12e105f8f338c9ccc3",
+                "reference": "7a45f41f93cdca3d03aa2e12e105f8f338c9ccc3",
                 "shasum": ""
             },
             "require": {
@@ -5483,7 +5483,7 @@
                 "issues": "https://github.com/spryker-sdk/upgrader/issues",
                 "source": "https://github.com/spryker-sdk/upgrader/tree/feature/pplust-510/master-intergrator-as-part-of-upgrader"
             },
-            "time": "2022-05-04T17:21:39+00:00"
+            "time": "2022-05-05T13:14:45+00:00"
         },
         {
             "name": "spryker/acl-entity-extension",
