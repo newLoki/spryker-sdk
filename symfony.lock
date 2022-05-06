@@ -172,6 +172,9 @@
     "guzzlehttp/psr7": {
         "version": "2.1.0"
     },
+    "http-interop/http-factory-guzzle": {
+        "version": "1.2.0"
+    },
     "jetbrains/phpstorm-stubs": {
         "version": "v2019.3"
     },
@@ -207,6 +210,9 @@
     },
     "laminas/laminas-zendframework-bridge": {
         "version": "1.4.0"
+    },
+    "m4tthumphrey/php-gitlab-api": {
+        "version": "11.8.0"
     },
     "mikey179/vfsstream": {
         "version": "v1.6.10"
